@@ -1,0 +1,12 @@
+Description:
+ an abstract class that walk recursively through a given path.
+ Activating the walking can be done by calling the StartWalking($pathtofolder) function
+ This class contains 4 abstract function that the user needs to implements:
+ 1. FolderFilter: a function that will be called when walking process finds a folder. Expected to return true of false
+ 2. ProcessFolder: a function that will be called if FolderFilter function returns true
+ 3. FileFilter: behave the same as FolderFilter but instead of folder, this function subject is file
+ 4. ProcessFilter: a function that will be called if FileFilter returns true
+
+Todo: repair the $mStringFolderTree. It still didn't print the tree of the folder correctly 
+
+License: LGPL
